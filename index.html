@@ -51,7 +51,7 @@
             <a href="contato.html" class="nav-link">Contato</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Login</a>
+            <a href="#" data-toggle="modal" data-target="#loginModal" class="nav-link">Login</a>
           </li>
           <li class="nav-item">
             <a href="inscricao.html" class="btn btn-outline-primary ml-md-2">Inscreva-se</a>
@@ -386,6 +386,44 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="LoginModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="LoginModalTitle">Entre na sua Conta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input type="email" class="form-control" id="loginEmail" />
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" class="form-control" id="loginPassword" />
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+              <small class="form-text text-muted"
+                >Esqueceu sua senha? <a href="#">Clique aqui.</a></small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/app.js"></script>
