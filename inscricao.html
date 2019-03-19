@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Caravan - Contato</title>
+    <title>Caravan - Inscreva-se</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -48,7 +48,7 @@
             <a href="planos.html" class="nav-link">Planos</a>
           </li>
           <li class="nav-item">
-            <a href="contato.html" class="nav-link active">Contato</a>
+            <a href="contato.html" class="nav-link">Contato</a>
           </li>
           <li class="nav-item">
             <a href="#" data-toggle="modal" data-target="#loginModal" class="nav-link">Login</a>
@@ -61,62 +61,68 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Fale Conosco -->
+    <!-- Inscreva-se -->
     <section class="container">
       <div class="my-5 text-center">
-        <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
-        <h1 class="display-4 text-primary">Fale Conosco</h1>
+        <span class="h6 d-block">PROGRAME A VIAGEM DO SEU SONHO</span>
+        <h1 class="display-4 text-primary">INSCREVA-SE</h1>
       </div>
       <div class="row">
-        <div class="col-lg mb-5">
-          <form class="bg-light rounded p-4 box-shadow">
-            <div class="form-group">
-              <label for="clientName">Nome</label>
-              <input type="text" class="form-control" id="clientName" />
+        <form class="col-lg-6">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="NameInput">Nome</label>
+              <input type="text" class="form-control" id="NameInput" placeholder="Nome Completo" />
             </div>
-            <div class="form-group">
-              <label for="clientEmail">Email</label>
-              <input type="email" class="form-control" id="clientEmail" />
+            <div class="form-group col-md-6">
+              <label for="CPFInput">CPF</label>
+              <input type="text" class="form-control" id="CPFInput" placeholder="xxx.xxx.xxx-xx" />
             </div>
-            <div class="form-group">
-              <label for="clientMessage">Mensagem</label>
-              <textarea class="form-control" id="clientMessage" rows="4"></textarea>
+            <div class="form-group col-md-6">
+              <label for="EmailInput">Email</label>
+              <input type="email" class="form-control" id="EmailInput" placeholder="Seu Email" />
             </div>
-            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-          </form>
-        </div>
-
-        <div class="col-lg">
-          <h2 class="h6 ">NOSSO ENDEREÇO</h2>
-          <a href="#">
-            <img
-              src="img/mapa.png"
-              class="img-fluid box-shadow rounded mb-4"
-              alt="Endereço da Empresa"
-            />
-          </a>
-          <h2 class="h6">DADOS DE CONTATO</h2>
-          <ul class="list-unstyled text-secondary">
-            <li>caravan@caravan.com.br</li>
-            <li>21 9999-9999</li>
-            <li>De Seg. à Sex. das 8h as 18h</li>
-          </ul>
-          <h2 class="h6">REDES SOCIAIS</h2>
-          <ul class="list-unstyled" style="max-width: 260px">
-            <li>
-              <a class="btn btn-outline-secondary mb-2 btn-block btn-sm" href="#">Facebook</a>
-            </li>
-            <li>
-              <a class="btn btn-outline-secondary mb-2 btn-block btn-sm" href="#">Twitter</a>
-            </li>
-            <li>
-              <a class="btn btn-outline-secondary mb-2 btn-block btn-sm" href="#">Youtube</a>
-            </li>
-          </ul>
-        </div>
+            <div class="form-group col-md-6">
+              <label for="passwordInput">Senha</label>
+              <input
+                type="password"
+                class="form-control"
+                id="passwordInput"
+                placeholder="Senha de Acesso"
+              />
+            </div>
+            <div class="form-group col-12">
+              <label for="addressInput">Endereço</label>
+              <input
+                type="text"
+                class="form-control"
+                id="addressInput"
+                placeholder="Número, Nome da rua e Bairro"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="cityInput">Cidade</label>
+              <input type="text" class="form-control" id="cityInput" />
+            </div>
+            <div class="form-group col-md-3 col-6">
+              <label for="stateInput">Estado</label>
+              <select class="form-control" id="stateInput">
+                <option>Selecione o Estado</option>
+                <option>Rio de Janeiro</option>
+                <option>São Paulo</option>
+                <option>Ceará</option>
+                <option>Pernambuco</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3 col-6">
+              <label for="CEPInput">CEP</label>
+              <input type="text" class="form-control" id="CEPInput" placeholder="xxxxx-xx" />
+            </div>
+          </div>
+        </form>
       </div>
     </section>
-    <!-- Fim Fale Conosco -->
+    <!-- Fim Inscreva-se -->
 
     <!-- Perguntas Frequentes -->
     <section class="container">
