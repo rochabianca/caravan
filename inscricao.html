@@ -119,104 +119,141 @@
               <input type="text" class="form-control" id="CEPInput" placeholder="xxxxx-xx" />
             </div>
           </div>
+          <div class="bg-light rounded box-shadow p-3 form-group">
+            <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
+            <nav class="nav btn-group mb-3" id="PaymentForm" role="tablist">
+              <button
+                class="btn btn-secondary active btn-sm"
+                type="button"
+                id="nav-card-tab"
+                data-toggle="tab"
+                href="#nav-card"
+                role="tab"
+                aria-controls="nav-card"
+                aria-selected="true"
+              >
+                Cartão de Crédito
+              </button>
+              <button
+                class="btn btn-secondary btn-sm"
+                type="button"
+                id="nav-boleto-tab"
+                data-toggle="tab"
+                href="#nav-boleto"
+                role="tab"
+                aria-controls="nav-boleto"
+                aria-selected="false"
+              >
+                Boleto Bancário
+              </button>
+            </nav>
+            <div class="tab-content" id="paymentFormContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-card"
+                role="tabpanel"
+                aria-labelledby="nav-card-tab"
+              >
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="CardName">Nome no Cartão</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="CardName"
+                      placeholder="Nome impresso no cartão"
+                    />
+                  </div>
+
+                  <div class="form-group col-md-3 col-6">
+                    <label for="monthInput">Mês</label>
+                    <select class="form-control" id="monthInput">
+                      <option>Expira mês..</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-3 col-6">
+                    <label for="YearInput">Ano</label>
+                    <select class="form-control" id="YearInput">
+                      <option>Expira ano..</option>
+                      <option>2019</option>
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="CardNumber">Número do Cartão</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="CardNumber"
+                      placeholder="5555 5555 5555 5555"
+                    />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="CodeInput">Código de Segurança</label>
+                    <input type="text" class="form-control" id="CodeInput" placeholder="XXX" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-boleto"
+                role="tabpanel"
+                aria-labelledby="nav-boleto-tab"
+              >
+                <p class="lead">
+                  Clique em contratar plano que enviaremos um boleto para o seu e-mail.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1"
+              >Concordo com os <a class="text-primary" href="#">Termos e Condições</a></label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Contratar Plano</button>
         </form>
+
+        <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+          <h2 class="h6 text-primary ">PLANO ESCOLHIDO</h2>
+          <div class="bg-light rounded p-4 box-shadow">
+            <h2>Platinum <span class="badge badge-success">Novo</span></h2>
+            <ul class="list-unstyled plans-list">
+              <li>→ 60 dias de viagem</li>
+              <li>→ 6 destinos diferentes</li>
+              <li>→ Tudo pago pela empresa</li>
+              <li>→ Ingressos para festas</li>
+            </ul>
+            <form>
+              <div class="form-group">
+                <select id="inputCities" class="form-control bg-light">
+                  <option value="">Selecione a Cidade</option>
+                  <option value="dublin">Dublin</option>
+                  <option value="paris">Paris</option>
+                  <option value="california">California</option>
+                </select>
+              </div>
+            </form>
+            <div class="row mt-4">
+              <div class="col">
+                <span class="h4">R$7.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Fim Inscreva-se -->
-
-    <!-- Perguntas Frequentes -->
-    <section class="container">
-      <div class="my-5 text-center">
-        <span class="h6 d-block">AINDA COM DUVIDAS?</span>
-        <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-6" id="perguntasFrequentes" data-children=".question">
-          <div class="question py-2">
-            <a
-              class="lead"
-              data-toggle="collapse"
-              data-parent="#perguntasFrequentes"
-              href="#pergunta1"
-              aria-expanded="true"
-              aria-controls="pergunta1"
-              >→ É possivel cancelar a viagem?</a
-            >
-            <div id="pergunta1" class="collapse show" role="tabpanel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div class="dropdown-divider"></div>
-          <div class="question py-2">
-            <a
-              class="lead"
-              data-toggle="collapse"
-              data-parent="#perguntasFrequentes"
-              href="#pergunta2"
-              aria-expanded="true"
-              aria-controls="pergunta2"
-              >→ Qual a garantia que tenho se perder o voo?</a
-            >
-            <div id="pergunta2" class="collapse" role="tabpanel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-          <div class="dropdown-divider"></div>
-          <div class="question py-2">
-            <a
-              class="lead"
-              data-toggle="collapse"
-              data-parent="#perguntasFrequentes"
-              href="#pergunta3"
-              aria-expanded="true"
-              aria-controls="pergunta3"
-              >→ Qual o melhor destino de viagem?</a
-            >
-            <div id="pergunta3" class="collapse" role="tabpanel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-
-          <div class="dropdown-divider"></div>
-          <div class="question py-2">
-            <a
-              class="lead"
-              data-toggle="collapse"
-              data-parent="#perguntasFrequentes"
-              href="#pergunta4"
-              aria-expanded="true"
-              aria-controls="pergunta4"
-              >→ Vocês dão descontos para grupos grandes?</a
-            >
-            <div id="pergunta4" class="collapse" role="tabpanel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div class="dropdown-divider"></div>
-        </div>
-        <!-- end col-6 -->
-      </div>
-      <!-- end row-->
-      <div class="text-center my-4">
-        <p class="small m-1">FALE CONOSCO PARA MAIS DUVIDAS</p>
-        <a class="btn btn-primary btn-lg" href="contato.html">Entre em Contato</a>
-      </div>
-    </section>
-    <!-- End Perguntas Frequentes -->
 
     <!-- Footer -->
     <footer class="bg-dark mt-5">
